@@ -1,0 +1,130 @@
+/*
+font-family: 'Poppins', sans-serif;
+200 400 600
+*/
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--VeryDarkBlue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+
+/*Globals*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+header{
+    color: var(--VeryDarkBlue);
+    font-size: 25px;
+    margin: 0 auto;
+    font-weight: 200;    
+}
+main{
+    max-width: 31rem;
+    margin: 0 auto;
+    display: block;   
+}
+p{
+    color: var(--GrayishBlue);
+    margin-bottom: 6rem;
+}
+div{
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+    padding: 2rem 4rem 2rem 2rem;
+    position: relative;
+    height: 20rem;
+    margin-bottom: 3rem;
+    border-radius: .5rem;
+    border-top: 5px solid;
+    text-align: left;
+    color: var(--GrayishBlue);
+    font-size: 13px;
+}
+span{
+    display: block;
+}
+img{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+}
+
+
+/*Header*/
+header span{
+    font-weight: 600;
+}
+
+/*Main*/
+.supervisor{
+    border-color: var(--Cyan);
+}
+.builder{
+    border-color: var(--Red);
+}
+.karma{
+    border-color: var(--Orange);
+}
+.calculator{
+    border-color: var(--Blue);
+}
+div span{
+    color: var(--VeryDarkBlue);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*Footer*/
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*Media Querries*/
+@media (min-width: 768px) {
+ header{
+    font-size: 30px;
+ }
+ main{
+    max-width: 120rem;
+ }
+ p{
+    padding: 0 35rem;
+ }
+ section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+ div{
+    max-width: 35rem;
+ }
+ .two{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+ }
+ .supervisor, .builder, .karma, .calculator{
+    padding: 2rem 3rem;
+ }
+ 
+}
